@@ -8,7 +8,13 @@
         <p>Posted by {{this.user.email}} {{this.createdAt}}</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
+        {{#if isAdminOrCreator this}}
+          <div class="btn red delete-post" data-id="{{this._id}}"><i class="material-icons">delete</i></div>
+        {{/if}}
+        {{#if currentUser}}
+          <div class="btn like-post" data-id="{{this._id}}"><i class="material-icons">thumb_up</i></div>
+        {{/if}}
+        <p>{{this.likes}} Likes</p>
       </div>
     </div>
   </div>
