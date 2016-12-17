@@ -34,3 +34,4 @@ browser-policy-framing@1.0.12
 alanning:roles           # roles, assign to admin, and views , built in, write helpers to initiate
 cunneen:accounts-admin-materializecss # materliaze account handler, edit privaliges
 mdg:camera
+iron:middleware-stack@1.1.0
